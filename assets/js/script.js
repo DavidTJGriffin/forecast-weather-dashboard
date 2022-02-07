@@ -18,7 +18,7 @@ function getLocation() {
     searchValue = 'New York'
 
     console.log("Searching weather for ...", searchValue);
-    var apiURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + searchValue + "&limit=1&appid=" + apiKey;
+    var apiURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + searchValue + "&limit=1&appid=" + apiKey;
     console.log(apiURL);
     //Fetch data from the API 
     fetch(apiURL)
@@ -48,7 +48,7 @@ function getEnteredLocation() {
     searchValue = searchInput.value;
 
     console.log("Searching weather for ...", searchValue);
-    var apiURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + searchValue + "&limit=1&appid=" + apiKey;
+    var apiURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + searchValue + "&limit=1&appid=" + apiKey;
     console.log(apiURL);
     //Fetch data from the API 
     fetch(apiURL)
@@ -87,7 +87,7 @@ function getWeather() {
             console.log("One call Response", data);
             document.getElementById('date').textContent = moment().format('MMMM Do YYYY')
             console.log(data.current.weather.icon);
-            iconEl.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.current.weather[0].icon + '@2x.png');
+            iconEl.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.current.weather[0].icon + '@2x.png');
             document.getElementById('temp').textContent = 'Temp: ' + data.current.temp + '°F'
             document.getElementById('wind').textContent = 'Wind: ' + data.current.wind_speed + ' mph'
             document.getElementById('humidity').textContent = 'Humidity: ' + data.current.humidity + '%'
@@ -95,31 +95,31 @@ function getWeather() {
             console.log(data.daily[4].dt)
 
             // Forecast data displaying to page
-            icon0.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.daily[0].weather[0].icon + '@2x.png');
+            icon0.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.daily[0].weather[0].icon + '@2x.png');
             document.getElementById('0').textContent = moment.unix(data.daily[0].dt).format("MM/DD/YYYY")
             document.getElementById('temp0').textContent = 'Temp: ' + data.daily[0].temp.day + '°F';
             document.getElementById('wind0').textContent = 'Wind: ' + data.daily[0].wind_speed + ' mph'
             document.getElementById('hum0').textContent = 'Humidity: ' + data.daily[0].humidity + '%'
 
-            icon1.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.daily[1].weather[0].icon + '@2x.png');
+            icon1.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.daily[1].weather[0].icon + '@2x.png');
             document.getElementById('1').textContent = moment.unix(data.daily[1].dt).format("MM/DD/YYYY")
             document.getElementById('temp1').textContent = 'Temp: ' + data.daily[1].temp.day + '°F';
             document.getElementById('wind1').textContent = 'Wind: ' + data.daily[1].wind_speed + ' mph'
             document.getElementById('hum1').textContent = 'Humidity: ' + data.daily[1].humidity + '%'
 
-            icon2.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.daily[2].weather[0].icon + '@2x.png');
+            icon2.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.daily[2].weather[0].icon + '@2x.png');
             document.getElementById('2').textContent = moment.unix(data.daily[2].dt).format("MM/DD/YYYY")
             document.getElementById('temp2').textContent = 'Temp: ' + data.daily[2].temp.day + '°F';
             document.getElementById('wind2').textContent = 'Wind: ' + data.daily[2].wind_speed + ' mph'
             document.getElementById('hum2').textContent = 'Humidity: ' + data.daily[2].humidity + '%'
 
-            icon3.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.daily[3].weather[0].icon + '@2x.png');
+            icon3.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.daily[3].weather[0].icon + '@2x.png');
             document.getElementById('3').textContent = moment.unix(data.daily[3].dt).format("MM/DD/YYYY")
             document.getElementById('temp3').textContent = 'Temp: ' + data.daily[3].temp.day + '°F';
             document.getElementById('wind3').textContent = 'Wind: ' + data.daily[3].wind_speed + ' mph'
             document.getElementById('hum3').textContent = 'Humidity: ' + data.daily[3].humidity + '%'
 
-            icon4.setAttribute("src", 'http://openweathermap.org/img/wn/' + data.daily[4].weather[0].icon + '@2x.png');
+            icon4.setAttribute("src", 'https://openweathermap.org/img/wn/' + data.daily[4].weather[0].icon + '@2x.png');
             document.getElementById('4').textContent = moment.unix(data.daily[4].dt).format("MM/DD/YYYY")
             document.getElementById('temp4').textContent = 'Temp: ' + data.daily[4].temp.day + '°F';
             document.getElementById('wind4').textContent = 'Wind: ' + data.daily[4].wind_speed + ' mph'
