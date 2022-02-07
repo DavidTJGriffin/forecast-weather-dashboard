@@ -7,7 +7,7 @@
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-Open the link: https://davidtjgriffin.github.io/strong-password-generator/
+Open the link: https://davidtjgriffin.github.io/forecast-weather-dashboard/
 ## Usage
 Type a city into the search bar, press enter and see the weather data for that city
 
