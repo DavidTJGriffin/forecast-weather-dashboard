@@ -2,6 +2,11 @@
     background-image: linear-gradient(to bottom right, blue, purple);
     color: white;
     padding: 10px 10px;
+    width: 100%;
+}
+
+#icon {
+    
 }
 
 #banner h1 {

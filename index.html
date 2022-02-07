@@ -17,14 +17,17 @@
     </header>
 
     <section class="row d-block d-lg-flex my-3">
-        <div id="search" class="col-4">
+        <div id="search" class="col-lg-4 col-12 mx-auto">
             <h1>Search for a city</h1>
             <input type="text" placeholder="New York" id="cityName" />
             <button id="search" class="btn-success">Search </button>
         </div>
 
-        <div class="col-7 border">
-            <h1 id="city">City</h1>
+        <div class="col-lg-7 col-10 border justify-content-around mt-3 mx-auto">
+            <div class="row">
+                <h1 class="col-6" id="city"></h1>
+                <img class="col-3" id="icon" />
+            </div>
             <h2 id="date"></h2>
             <p id="temp">Temp: </p>
             <p id="wind">Wind:</p>
@@ -37,13 +40,15 @@
 
 
     <!-- Card 1 -->
-    <h2>5-day Forecast</h2>
-    <div class="row justify-content-around my-3">
-        
-        <div class="col-2">
+    
+        <h2>5-day Forecast</h2>
+    <div class="row justify-content-around my-3 d-lg-flex d-block">
+
+        <div class="col-lg-2 col-10 mx-auto">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body mx-auto">
                     <h4 class="card-title" id="0"></h4>
+                    <img id="icon0" />
                     <p id="temp0"></p>
                     <p id="wind0"></p>
                     <p id="hum0"></p>
@@ -52,10 +57,11 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-2">
+        <div class="col-lg-2 col-10 mx-auto">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body mx-auto">
                     <h4 class="card-title" id="1"></h4>
+                    <img id="icon1" />
                     <p id="temp1"></p>
                     <p id="wind1"></p>
                     <p id="hum1"></p>
@@ -64,10 +70,11 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-2">
+        <div class="col-lg-2 col-10 mx-auto">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body mx-auto">
                     <h4 class="card-title" id="2"></h4>
+                    <img id="icon2" />
                     <p id="temp2"></p>
                     <p id="wind2"></p>
                     <p id="hum2"></p>
@@ -76,10 +83,11 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="col-2">
+        <div class="col-lg-2 col-10 mx-auto">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body mx-auto">
                     <h4 class="card-title" id="3"></h4>
+                    <img id="icon3" />
                     <p id="temp3"></p>
                     <p id="wind3"></p>
                     <p id="hum3"></p>
@@ -88,10 +96,11 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="col-2">
+        <div class="col-lg-2 col-10 mx-auto">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body mx-auto">
                     <h4 class="card-title" id="4"></h4>
+                    <img id="icon4" />
                     <p id="temp4"></p>
                     <p id="wind4"></p>
                     <p id="hum4"></p>
