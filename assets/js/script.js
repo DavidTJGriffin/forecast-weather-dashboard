@@ -42,6 +42,7 @@ function getLocation() {
             console.log("Error", error);
         })
 };
+getLocation();
 
 function getEnteredLocation() {
     searchValue = searchInput.value;
@@ -72,7 +73,7 @@ function getEnteredLocation() {
         })
 };
 
-getLocation();
+
 
 function getWeather() {
     var apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&units=imperial' + '&exclude=minutely,hourly,alerts&appid=' + apiKey;
