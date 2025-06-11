@@ -14,7 +14,7 @@ Type a city into the search bar, press enter and see the weather data for that c
 
 
 
-![Website Screenshot](assets/images/website-screenshot.jpg)
+![Website Screenshot](assets/images/weatherDashboard.png)
 ## Credits
 [David Griffin](https://github.com/Ukarimu1)
 ## License
